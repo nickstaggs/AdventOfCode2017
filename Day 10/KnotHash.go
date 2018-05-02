@@ -47,7 +47,6 @@ func main() {
     end := curr+l-1
     fmt.Println(curr, end)
     for j := curr; j < end; j++ {
-      //fmt.Println(skip)
       arr[j%size], arr[end%size] = arr[end%size], arr[j%size]
       end--
     }
